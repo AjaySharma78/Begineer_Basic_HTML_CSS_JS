@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ 
+  .pic{
+    flex:1;
+    background: linear-gradient(90deg,rgba(229, 230, 200, 0.8),rgb(54, 52, 52));
+    
+  }
+  .pic img{
+ margin: 0px 30%;
+  }
+  .small_box{
+    flex: 1;
+    font-size: 22px;
+    background:linear-gradient(90deg, rgb(54, 52, 52),rgba(229, 230, 200, 0.8));
+  }
+  h1{
+    text-align: center;
+  }
+  td{
+    font-size: 30px;
+
+  }
+  input[type=text],input[type=password],input[type=submit]{
+    padding: 10px 40px;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    background: transparent;
+    border: none;
+    border-bottom:2px solid black;
+    outline: none;
+  }
+  ::placeholder{
+    font-size: 28px;
+    float:left;
+  }
+  input[type=submit]:hover{
+    color:blue;
+    cursor: pointer;
+  }
+  .radhe{
+    color:rgba(223, 227, 146,0.5);
+    animation: radhe 3s infinite linear;
+  }
+  @keyframes radhe {
+    0%{
+    color:rgba(222, 228, 106, 0.8);
+    }
+    25%{
+    color:rgba(75, 194, 237, 0.8);
+    }
+    50%{
+    color:rgba(24, 187, 62, 0.8);
+    }
+    75%{
+    color:rgba(22, 74, 230, 0.8);
+    }
+    100%{
+      color:rgba(222, 228, 106, 0.8);
+    }
+  }
+  @media (max-width:870px) {
+    .box{
+      overflow-x: hidden;
+    }
+    .small_box{
+      font-size: 30px;
+    }
+    input[type=text],input[type=password],input[type=submit]{
+    padding: 5px 8px;
+    font-size: 20px;
+    }
+    ::placeholder{
+    font-size: 22px;
+    }
+    .pic{
+      background:linear-gradient(90deg, rgb(54, 52, 52),rgba(229, 230, 200, 0.8));
+  }
+  .pic img{
+ margin: 0px 8%;
+  }
+  }
